@@ -1,0 +1,8 @@
+global-styling-and-scripts:
+  version: VERSION
+  css:
+    theme: 
+      css/style.css: {}
+      css/bootstrap.min.css: {}
+  js:
+    js/bootstrap.min.js: {}

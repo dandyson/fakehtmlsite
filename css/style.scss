@@ -1,0 +1,319 @@
+/*
+|--------------------------------------------------------------------------
+| Bootstrap Default Values
+|--------------------------------------------------------------------------
+*/
+
+.bd-placeholder-img {
+    font-size: 1.125rem;
+    text-anchor: middle;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+
+@media (min-width: 768px) {
+    .bd-placeholder-img-lg {
+        font-size: 3.5rem;
+    }
+}
+
+/*
+|--------------------------------------------------------------------------
+| COLOURS & TYPEOGRAPHY
+|--------------------------------------------------------------------------
+*/
+
+$font: "Roboto";
+$closeHeight: 1em;
+
+$XXLarge: 4em;
+$XLarge: 3.2em;
+$large: 2em;
+$medium: 1.5em;
+$mediumSmall: 1.4em;
+$small: 1.3em;
+$tiny: 0.9em;
+
+$light: 300;
+$regular: 400;
+$medium: 500;
+$heavy: 700;
+
+$lightCol: #F8F9FA;
+$primaryOrange: #FFA000;
+$primaryBrown: #3C2F19;
+$greyBackground: #EBEBEB;
+$greyBlock: #D6D6D6;
+$greyText: #B2B2B2;
+
+/*
+|--------------------------------------------------------------------------
+| GENERAL STYLES
+|--------------------------------------------------------------------------
+*/
+
+body {
+    font-family: $font;
+    background-color: $greyBackground;
+}
+
+.mainContainer {
+    position: relative;
+    z-index: 0;
+    width: 100%;
+    height: 100%;
+}
+
+/*
+|--------------------------------------------------------------------------
+| NAVIGATION
+|--------------------------------------------------------------------------
+*/
+
+.navbar-brand {
+    margin-left: 7em;
+}
+
+.navbar-collapse {
+    /***** OVERWRITING BOOTSTRAP STYLES *****/
+    flex-grow: 0 !important;
+    margin-right: 7em;
+}
+
+.navbar-brand img {
+    position: relative;
+    top: -6px;
+}
+
+.nav-item {
+    font-size: $small;
+    text-align: center;
+}
+
+/**** Custom Media Queries ****/
+
+/* styles for medium/small devices*/
+@media (max-width: 991px) { 
+    .navbar-brand {
+        margin-left: 1em;
+    }
+
+    .navbar-collapse {
+        margin: 0 auto;
+    }
+}
+
+/*
+|--------------------------------------------------------------------------
+| TOP BOX
+|--------------------------------------------------------------------------
+*/
+
+#topBox {
+    height: 560px;
+    width: 100%;
+    background-image: url('../img/Webathon_lumberjack\ man.png');
+    background-size: cover;
+}
+
+#textContainer {
+    margin-left: 160px;
+    position: relative;
+    top: -40px;
+    max-width: 40%;
+    color: $lightCol;
+}
+
+#textContainer h1 {
+    line-height: $closeHeight;
+    font-size: $XXLarge;
+}
+
+#textContainer p {
+    line-height: $closeHeight;
+    font-weight: $light;
+    font-size: $large;
+}
+
+#textContainer span {
+    color: $primaryOrange;
+    font-weight: $medium;
+}
+
+#textContainer button {
+    background-color: $primaryOrange;
+    color: $lightCol;
+    font-size: $small;
+    border: none;
+    height: 45px;
+    width: 150px;
+    border-radius: 12px;
+}
+
+/**** Custom Media Queries ****/
+
+/* styles for extra small devices (below 576px width)*/
+@media (max-width: 576px) { 
+    #textContainer {
+        max-width: 70%;
+         top: 150px;
+         text-align: center;
+         margin: 0 auto;
+    }
+
+    #textContainer h1 {
+        font-size: 2em;
+    }
+
+    #textContainer p {
+        font-size: $small;
+    }
+}
+
+
+/*To take out left margin from text container on tablet sized devices*/
+@media (min-width: 576px) and (max-width: 991px) { 
+    #textContainer {
+        margin-left: 0px;
+
+    }
+ }
+
+
+ /*
+|--------------------------------------------------------------------------
+| FEATURE CIRCLES SECTION
+|--------------------------------------------------------------------------
+*/
+
+#featuresSection {
+    position: relative;
+    z-index: 1;
+    top: -75px;
+}
+
+#featuresSection span {
+    font-weight: $medium;
+}
+
+#featuresSection p {
+    line-height: $closeHeight;
+    width: 68%;
+    margin: 15px auto;
+    font-size: $small;
+}
+
+.whiteCircles {
+    -webkit-box-shadow: 10px 10px 42px -26px rgba(0,0,0,0.75);
+    -moz-box-shadow: 10px 10px 42px -26px rgba(0,0,0,0.75);
+    box-shadow: 10px 10px 42px -26px rgba(0,0,0,0.75);
+    height: 175px;
+    width: 175px;
+    text-align: center;
+    border-radius: 50%;
+    background-color: white;
+}
+
+ /*
+|--------------------------------------------------------------------------
+| FEATURETTES
+|--------------------------------------------------------------------------
+*/
+
+.featurette {
+    padding: 60px 0 60px 0; 
+}
+
+.featurette img {
+    -webkit-box-shadow: 10px 10px 20px -10px rgba(0,0,0,0.75);
+    -moz-box-shadow: 10px 10px 20px -10px rgba(0,0,0,0.75);
+    box-shadow: 10px 10px 20px -10px rgba(0,0,0,0.75);
+}
+
+.featuretteText > * {
+    line-height: $closeHeight;
+    width: 90%;
+}
+
+.featuretteText h1 {
+    font-size: $XLarge;
+    font-weight: $heavy;
+    color: $primaryBrown;
+}
+
+.featuretteText p {
+    margin-top: 20px;
+    font-size: $mediumSmall;
+    font-weight: $regular;
+}
+
+.greyFeaturetteWrapper {
+    background-color: $greyBlock;
+}
+
+/**** Custom Media Queries ****/
+
+@media (max-width: 991px) {
+    .featurette img {
+        margin: 30px;
+    }
+}
+
+@media (max-width: 576px) {
+    .featuretteText h1 {
+        font-size: 2.3em;
+        width: 100%;
+    }
+    
+    .featuretteText p {
+        font-size: $tiny;
+    }
+
+    .featurette img {
+        height: 150px;
+    }
+}
+
+ /*
+|--------------------------------------------------------------------------
+| FOOTER
+|--------------------------------------------------------------------------
+*/
+
+footer {
+    margin-top: 50px;
+    background-color: $primaryBrown;
+    width: 100%;
+}
+
+footer h5 {
+    color: $lightCol;
+}
+
+.footerMenus li a {
+    color: $greyText;
+}
+
+.footerLogo {
+    margin-top: 100px;
+    width: 60%;
+}
+
+.footerLogo p {
+    margin-top: 20px;
+    font-size: $tiny;
+    font-weight: $light;
+    color: $greyText;
+    line-height: $closeHeight;
+    font-weight: $light;
+}
+
+/**** Custom Media Queries ****/
+
+@media (min-width: 991px) {
+    .contact {
+        margin-left: 60px;
+    }
+}

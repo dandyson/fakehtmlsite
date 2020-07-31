@@ -1,0 +1,277 @@
+/*
+|--------------------------------------------------------------------------
+| Bootstrap Default Values
+|--------------------------------------------------------------------------
+*/
+.bd-placeholder-img {
+  font-size: 1.125rem;
+  text-anchor: middle;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+
+@media (min-width: 768px) {
+  .bd-placeholder-img-lg {
+    font-size: 3.5rem;
+  }
+}
+
+/*
+|--------------------------------------------------------------------------
+| COLOURS & TYPEOGRAPHY
+|--------------------------------------------------------------------------
+*/
+/*
+|--------------------------------------------------------------------------
+| GENERAL STYLES
+|--------------------------------------------------------------------------
+*/
+body {
+  font-family: "Roboto";
+  background-color: #EBEBEB;
+}
+
+.mainContainer {
+  position: relative;
+  z-index: 0;
+  width: 100%;
+  height: 100%;
+}
+
+/*
+|--------------------------------------------------------------------------
+| NAVIGATION
+|--------------------------------------------------------------------------
+*/
+.navbar-brand {
+  margin-left: 7em;
+}
+
+.navbar-collapse {
+  /***** OVERWRITING BOOTSTRAP STYLES *****/
+  -webkit-box-flex: 0 !important;
+      -ms-flex-positive: 0 !important;
+          flex-grow: 0 !important;
+  margin-right: 7em;
+}
+
+.navbar-brand img {
+  position: relative;
+  top: -6px;
+}
+
+.nav-item {
+  font-size: 1.3em;
+  text-align: center;
+}
+
+/**** Custom Media Queries ****/
+/* styles for medium/small devices*/
+@media (max-width: 991px) {
+  .navbar-brand {
+    margin-left: 1em;
+  }
+  .navbar-collapse {
+    margin: 0 auto;
+  }
+}
+
+/*
+|--------------------------------------------------------------------------
+| TOP BOX
+|--------------------------------------------------------------------------
+*/
+#topBox {
+  height: 560px;
+  width: 100%;
+  background-image: url("../img/Webathon_lumberjack man.png");
+  background-size: cover;
+}
+
+#textContainer {
+  margin-left: 160px;
+  position: relative;
+  top: -40px;
+  max-width: 40%;
+  color: #F8F9FA;
+}
+
+#textContainer h1 {
+  line-height: 1em;
+  font-size: 4em;
+}
+
+#textContainer p {
+  line-height: 1em;
+  font-weight: 300;
+  font-size: 2em;
+}
+
+#textContainer span {
+  color: #FFA000;
+  font-weight: 500;
+}
+
+#textContainer button {
+  background-color: #FFA000;
+  color: #F8F9FA;
+  font-size: 1.3em;
+  border: none;
+  height: 45px;
+  width: 150px;
+  border-radius: 12px;
+}
+
+/**** Custom Media Queries ****/
+/* styles for extra small devices (below 576px width)*/
+@media (max-width: 576px) {
+  #textContainer {
+    max-width: 70%;
+    top: 150px;
+    text-align: center;
+    margin: 0 auto;
+  }
+  #textContainer h1 {
+    font-size: 2em;
+  }
+  #textContainer p {
+    font-size: 1.3em;
+  }
+}
+
+/*To take out left margin from text container on tablet sized devices*/
+@media (min-width: 576px) and (max-width: 991px) {
+  #textContainer {
+    margin-left: 0px;
+  }
+}
+
+/*
+|--------------------------------------------------------------------------
+| FEATURE CIRCLES SECTION
+|--------------------------------------------------------------------------
+*/
+#featuresSection {
+  position: relative;
+  z-index: 1;
+  top: -75px;
+}
+
+#featuresSection span {
+  font-weight: 500;
+}
+
+#featuresSection p {
+  line-height: 1em;
+  width: 68%;
+  margin: 15px auto;
+  font-size: 1.3em;
+}
+
+.whiteCircles {
+  -webkit-box-shadow: 10px 10px 42px -26px rgba(0, 0, 0, 0.75);
+  box-shadow: 10px 10px 42px -26px rgba(0, 0, 0, 0.75);
+  height: 175px;
+  width: 175px;
+  text-align: center;
+  border-radius: 50%;
+  background-color: white;
+}
+
+/*
+|--------------------------------------------------------------------------
+| FEATURETTES
+|--------------------------------------------------------------------------
+*/
+.featurette {
+  padding: 60px 0 60px 0;
+}
+
+.featurette img {
+  -webkit-box-shadow: 10px 10px 20px -10px rgba(0, 0, 0, 0.75);
+  box-shadow: 10px 10px 20px -10px rgba(0, 0, 0, 0.75);
+}
+
+.featuretteText > * {
+  line-height: 1em;
+  width: 90%;
+}
+
+.featuretteText h1 {
+  font-size: 3.2em;
+  font-weight: 700;
+  color: #3C2F19;
+}
+
+.featuretteText p {
+  margin-top: 20px;
+  font-size: 1.4em;
+  font-weight: 400;
+}
+
+.greyFeaturetteWrapper {
+  background-color: #D6D6D6;
+}
+
+/**** Custom Media Queries ****/
+@media (max-width: 991px) {
+  .featurette img {
+    margin: 30px;
+  }
+}
+
+@media (max-width: 576px) {
+  .featuretteText h1 {
+    font-size: 2.3em;
+    width: 100%;
+  }
+  .featuretteText p {
+    font-size: 0.9em;
+  }
+  .featurette img {
+    height: 150px;
+  }
+}
+
+/*
+|--------------------------------------------------------------------------
+| FOOTER
+|--------------------------------------------------------------------------
+*/
+footer {
+  margin-top: 50px;
+  background-color: #3C2F19;
+  width: 100%;
+}
+
+footer h5 {
+  color: #F8F9FA;
+}
+
+.footerMenus li a {
+  color: #B2B2B2;
+}
+
+.footerLogo {
+  margin-top: 100px;
+  width: 60%;
+}
+
+.footerLogo p {
+  margin-top: 20px;
+  font-size: 0.9em;
+  font-weight: 300;
+  color: #B2B2B2;
+  line-height: 1em;
+  font-weight: 300;
+}
+
+/**** Custom Media Queries ****/
+@media (min-width: 991px) {
+  .contact {
+    margin-left: 60px;
+  }
+}
+/*# sourceMappingURL=style.css.map */

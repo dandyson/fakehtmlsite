@@ -1,0 +1,12 @@
+name: fakehtmlsite
+type: theme
+description: Fake HTML Site
+package: Custom
+core: 8.x
+base theme: classy
+libraries: 
+  - fakehtmlsite/global-styling-and-scripts
+regions:
+  myheader: My Header
+  content: Content
+  myfooter: Footer
